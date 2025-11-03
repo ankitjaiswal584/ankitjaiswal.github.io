@@ -41,6 +41,17 @@ header {
   margin: 0 auto 1rem;
   border-radius: 50%;
   border: 3px solid white;
+  overflow: hidden;       /* ✅ keeps image inside circle */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar img {
+  width: 100%;            /* ✅ fits image inside container */
+  height: 100%;
+  object-fit: cover;      /* ✅ crops image without distortion */
+  border-radius: 50%;     /* keeps it round */
 }
 
 h1 {
